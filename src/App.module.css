@@ -1,0 +1,78 @@
+.container {
+    max-width: 736px;
+    margin: -1.5rem auto 0;
+}
+
+.newTask {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+}
+
+.newTask input {
+    flex: 1;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: .875rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+}
+
+.newTask button {
+    gap: .5rem;
+    border: none;
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: .875rem;
+    align-items: center;
+    color: var(--white);
+    transition: .1s ease;
+    background: var(--blue-600);
+}
+
+.newTask button:hover {
+    background: var(--blue-500);
+}
+
+.taskList {
+    margin-top: 4rem;
+}
+
+.taskList header {
+    display: flex;
+    font-weight: bold;
+    font-size: .875rem;
+    justify-content: space-between;
+}
+
+.taskList header span {
+    padding: 0 .5rem;
+    font-size: .75rem;
+    color: var(--white);
+    margin-left: .25rem;
+    border-radius: 360px;
+    display: inline-block;
+    background-color: var(--gray-400);
+}
+
+.taskList .allTasks {
+    color: var(--blue-500);
+}
+
+.taskList .finishedTasks {
+    color: var(--purple-500);
+}
+
+.taskList ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+}
+
+.taskListItem + .taskListItem {
+    margin-top: .75rem;
+}
